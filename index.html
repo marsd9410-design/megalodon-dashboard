@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megalodon Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Megalodon Dashboard</h1>
+      <p>Logs en temps réel</p>
+    </header>
 
+    <section class="cards">
+      <div class="card"><span>Total</span><strong id="total">0</strong></div>
+      <div class="card peak"><span>Peaklights</span><strong id="peaklights">0</strong></div>
+      <div class="card high"><span>Highlights</span><strong id="highlights">0</strong></div>
+      <div class="card mid"><span>Midlights</span><strong id="midlights">0</strong></div>
+      <div class="card low"><span>Lowlights</span><strong id="lowlights">0</strong></div>
+      <div class="card steal"><span>Steals</span><strong id="steals">0</strong></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Derniers logs</h2>
+        <input id="search" placeholder="Rechercher..." />
+      </div>
+      <div id="logs" class="logs"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
